@@ -9,10 +9,11 @@ export class TitleComponent implements OnInit {
   title = 'todos';
   constructor() { }
   ngOnInit() {
+
   }
 
   public getTitle() : string {
-    return "";
+    return 'todos';
   }
 
 }
