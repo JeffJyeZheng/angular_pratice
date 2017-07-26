@@ -11,4 +11,10 @@ describe('demo App', () => {
     page.navigateTo();
     expect(page.getTodos()).toBe('todos');
   });
+
+  it('should placeHolder', () => {
+    page.navigateTo();
+    expect(page.getPlaceHolder()).toBe('What needs to be done?');
+  });
+
 });

@@ -22,12 +22,15 @@ describe('TitleComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
-  it ('檢查component標題必須是todos', () => {
+
+  xit ('檢查component標題必須是todos', () => {
     expect(component.title).toBe('todos');
   });
 
+  // vadlidate function
   it('檢查 getTitle() return is todos', () => {
-    const title = component.getTitle();
+    let titleComponent = new TitleComponent();
+    const title = titleComponent.getTitle();
     expect(title).toBe('todos');
   });
 
